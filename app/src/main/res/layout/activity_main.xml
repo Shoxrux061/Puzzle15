@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.game.MainActivity">
+
+    <RelativeLayout
+        android:id="@+id/cubes_group"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
+
+        <TextView
+            android:id="@+id/cube_1"
+            style="@style/cube_style"
+            android:text="" />
+
+        <TextView
+            android:id="@+id/cube_2"
+            style="@style/cube_style"
+            android:layout_toRightOf="@id/cube_1"
+            android:text="" />
+
+        <TextView
+            android:id="@+id/cube_3"
+            style="@style/cube_style"
+            android:layout_toRightOf="@id/cube_2"
+            android:text="" />
+
+        <TextView
+            android:id="@+id/cube_4"
+            style="@style/cube_style"
+            android:layout_toRightOf="@id/cube_3"
+            android:text="" />
+
+        <TextView
+            android:id="@+id/cube_5"
+            style="@style/cube_style"
+            android:layout_below="@+id/cube_1"
+            android:text="" />
+
+        <TextView
+            android:id="@+id/cube_6"
+            style="@style/cube_style"
+            android:layout_below="@id/cube_1"
+            android:layout_toRightOf="@id/cube_5"
+            android:text="" />
+
+        <TextView
+            android:id="@+id/cube_7"
+            style="@style/cube_style"
+            android:layout_below="@id/cube_2"
+            android:layout_toRightOf="@id/cube_6"
+            android:text="" />
+
+        <TextView
+            android:id="@+id/cube_8"
+            style="@style/cube_style"
+            android:layout_below="@id/cube_3"
+            android:layout_toRightOf="@id/cube_7"
+            android:text="" />
+
+        <TextView
+            android:id="@+id/cube_9"
+            style="@style/cube_style"
+            android:layout_below="@id/cube_5"
+            android:text="" />
+
+        <TextView
+            android:id="@+id/cube_10"
+            style="@style/cube_style"
+            android:layout_below="@id/cube_5"
+            android:layout_toRightOf="@id/cube_9"
+            android:text="" />
+
+        <TextView
+            android:id="@+id/cube_11"
+            style="@style/cube_style"
+            android:layout_below="@id/cube_6"
+            android:layout_toRightOf="@id/cube_10"
+            android:text="" />
+
+        <TextView
+            android:id="@+id/cube_12"
+            style="@style/cube_style"
+            android:layout_below="@id/cube_7"
+            android:layout_toRightOf="@id/cube_11"
+            android:text="" />
+
+        <TextView
+            android:id="@+id/cube_13"
+            style="@style/cube_style"
+            android:layout_below="@id/cube_9"
+            android:text="" />
+
+        <TextView
+            android:id="@+id/cube_14"
+            style="@style/cube_style"
+            android:layout_below="@id/cube_9"
+            android:layout_toRightOf="@id/cube_13"
+            android:text="" />
+
+
+        <TextView
+            android:id="@+id/cube_15"
+            style="@style/cube_style"
+            android:layout_below="@id/cube_9"
+            android:layout_toRightOf="@id/cube_14"
+            android:text="" />
+
+        <TextView
+            android:id="@+id/cube_16"
+            style="@style/cube_style"
+            android:layout_below="@id/cube_9"
+            android:layout_toRightOf="@id/cube_15"
+            android:text=""
+            android:visibility="visible" />
+
+    </RelativeLayout>
+
+</FrameLayout>
