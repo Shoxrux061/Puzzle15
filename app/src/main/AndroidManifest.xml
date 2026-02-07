@@ -25,6 +25,11 @@
             android:exported="true">
 
         </activity>
+
+        <activity
+            android:name=".ui.result.ResultActivity"
+            android:exported="true">
+        </activity>
     </application>
 
 </manifest>

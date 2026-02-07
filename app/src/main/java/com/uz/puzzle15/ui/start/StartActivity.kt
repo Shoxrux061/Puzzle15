@@ -8,20 +8,31 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import com.uz.puzzle15.R
+import com.uz.puzzle15.core.local_storage.LocalStorage
 import com.uz.puzzle15.databinding.ActivityStartBinding
 import com.uz.puzzle15.ui.game.MainActivity
 
 class StartActivity : AppCompatActivity() {
 
     lateinit var binding: ActivityStartBinding
+    lateinit var cache: LocalStorage
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityStartBinding.inflate(layoutInflater)
+        cache = LocalStorage(this)
         enableEdgeToEdge()
         setContentView(binding.root)
 
+        loadDataToView()
         setActions()
+
+    }
+
+    private fun loadDataToView() {
+
+        val recordText = if (cache.getRecord() == 0) "no record" else cache.getRecord()
+        binding.recordText.text = recordText.toString()
 
     }
 

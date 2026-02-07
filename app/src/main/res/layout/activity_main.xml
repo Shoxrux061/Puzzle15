@@ -7,6 +7,23 @@
     android:layout_height="match_parent"
     tools:context=".ui.game.MainActivity">
 
+    <TextView
+        android:id="@+id/time_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="40dp"
+        android:text="0.00"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/record_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top|end"
+        android:layout_margin="40dp"
+        android:text="Record: 0.14"
+        android:textSize="20sp" />
+
     <RelativeLayout
         android:id="@+id/cubes_group"
         android:layout_width="wrap_content"

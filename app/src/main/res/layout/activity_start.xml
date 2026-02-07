@@ -7,6 +7,15 @@
     android:layout_height="match_parent"
     tools:context=".ui.start.StartActivity">
 
+    <TextView
+        android:id="@+id/record_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top|start"
+        android:layout_margin="40dp"
+        android:text="Record: 0:14"
+        android:textSize="18sp" />
+
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
